@@ -3,13 +3,13 @@ import express from "express";
 const app = express();
 const port = 8000;
 
-let counter = 0;
-
 const server = app.listen(port, () => {
     console.log(`Server on localhost:${port}`);
 });
 
 //...
+
+let counter = 0;
 
 app.get("/", (req, res) => {
     counter;
